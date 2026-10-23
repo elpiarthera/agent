@@ -95,7 +95,7 @@
     "tailwindcss": "^3.4.11",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
-    "vite": "^6.3.5"
+    "vite": "^6.4.4"
   },
   "peerDependencies": {
     "@convex-dev/agent": ">=0.2.2-alpha.1",
@@ -118,5 +118,9 @@
     "react-dom": "file:../node_modules/react-dom",
     "typescript": "5.9.3",
     "typescript-eslint": "8.57.1"
+  },
+  "overrides": {
+    "brace-expansion@^1.1.0": "1.1.20",
+    "brace-expansion@^2.0.0": "2.1.6"
   }
 }
