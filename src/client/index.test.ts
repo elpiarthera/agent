@@ -126,7 +126,7 @@ export const generateObjectWithThread = action({
     });
     const result = await thread.generateObject({
       prompt: args.prompt,
-      schema: z.object({ prompt: z.any() }),
+      schema: z.object({ prompt: z.any().optional() }),
     });
     return { object: result.object };
   },

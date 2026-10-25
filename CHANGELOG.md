@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Security
+
+- Dev dependencies only, nothing published changes: `zod` `3.25.76` → `^4.6.7` (GHSA-mrhx-c7xc-m3w5, also in the playground lockfile, `4.0.17` → `4.6.7`); `openai` `5.23.2` → `6.49.0` (first major whose zod peer accepts zod 4); `pkg-pr-new` `0.0.66` → `0.0.91`; unused `@langchain/textsplitters` and `ollama-ai-provider` removed (nothing imports them; they pinned `@langchain/core` 0.3 with langsmith GHSA-3644-q5cj-c5c7 and uuid GHSA-w5hq-g745-h8pq, and a zod 3 peer). One test schema marks its `z.any()` key `.optional()`, which zod 4.6 no longer infers.
+
 ## 0.6.1
 
 - Fix bundled package
